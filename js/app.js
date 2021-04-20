@@ -2,16 +2,16 @@ let btnMenu = document.querySelector('.btn-menu');
 let barIconX = document.querySelector('.btn-menu i');
 let menu = document.querySelector('.list-container');
 let menuContent = document.querySelector('.menu'); 
-var activador = true;
+let activador = true;
 
 
-btnMenu.addEventListener('click', (event) => {
+btnMenu.addEventListener('click', () => {
 
     //icono X en el menu
     barIconX.classList.toggle('fa-times');
 
     if(activador){
-        menu.style.left = '0%';
+        menu.style.left = '0';
         menu.style.transition = '0.5s';
 
         activador = false;
@@ -19,7 +19,8 @@ btnMenu.addEventListener('click', (event) => {
     } else {
         activador = false;
         menu.style.left = '-100%';
-        activador = true
+        menu.style.transition = '0.5s';
+        activador = true;
     }
 });
 
