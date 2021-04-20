@@ -711,3 +711,20 @@ hr {
 .box-red {
   background-color: #d50000;
 }
+
+.card-header { 
+  opacity: 5;
+  border: 2px solid #ffffff;
+  color: var(--white);
+}
+.card-noticias {
+  background-color: rgba(245, 245, 245, 0.4);
+  border: 2px solid #ffffff;
+}
+
+.sombra {
+    /* border: 1px solid; */
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+  
+}
